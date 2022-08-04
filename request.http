@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+  "name": "Caderno",
+  "price": 30
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/2b6e5c81-50c7-4e09-a16e-d68f6f00e7a8
+
+###
+
+PUT http://localhost:4002/products/90f69030-f4f6-439e-91c5-0f6b48d330ab
+content-type: application/json
+
+{
+  "name": "Caneta",
+  "price": 30
+}
+
+###
+
+DELETE http://localhost:4002/products/90f69030-f4f6-439e-91c5-0f6b48d330ab
